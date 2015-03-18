@@ -15,6 +15,8 @@ sh setup.sh
 
 ### Usage
 
+required : jq
+
 ```
 sh get-ip-address.sh {NameTag(regexp)} {profile}
 ```
@@ -26,11 +28,9 @@ sh get-ip-address.sh hoge* test
 output
 
 ```
-[
-  "192.168.xx.xx",
-  "192.168.yy.yy",
-  "192.168.zz.zz"
-]
+192.168.xx.xx
+192.168.yy.yy
+192.168.zz.zz
 ```
 
 ## enter-ec2-instance.sh
