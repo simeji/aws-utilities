@@ -3,12 +3,21 @@ AWS Utilities
 
 minimum tools
 
+## Setup
+
+create symlink
+
+```
+sh setup.sh
+```
 
 ## get-ip-address.sh
 
 ### Usage
 
+```
 sh get-ip-address.sh {NameTag(regexp)} {profile}
+```
 
 ex.
 
@@ -28,7 +37,9 @@ output
 
 ### Usage
 
+```
 sh enter-ec2-instance.sh {NameTag(regexp)} {profile} [{UserName}]
+```
 
 ex.
 
