@@ -2,6 +2,15 @@
 
 dir="/usr/local/bin"
 
+which jq
+if [ $? != 0 ]; then
+  echo "Do you install jq? [y/n] : "
+  read answer 
+  case $answer in
+    "Y" | "y" | "yes" | "Yes" | "YES" ) sudo yum install -y jq || brew install jq;;
+    * ) echo "This tool require 'jq'" && exit;;
+  esac
+fi
 # The function to make symbolic link
 # Arguments
 # $1 : target of symlink path

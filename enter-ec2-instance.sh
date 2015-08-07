@@ -9,5 +9,5 @@ profile=$2
 user=$3
 
 test -z $user && user=$USER
-ip=`get-ipaddress $name $profile | head -1`
+ip=`get-ip-address $name $profile | head -1`
 ssh -t $user@$ip
